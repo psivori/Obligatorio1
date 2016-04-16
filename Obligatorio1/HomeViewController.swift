@@ -8,11 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var email = defaults.stringForKey("Email")
+        var password = defaults.stringForKey("Password")
+        
+        if email == nil || password == nil{
+            self.performSegueWithIdentifier("toLogin", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
