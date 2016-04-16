@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="width" constant="280" id="NTh-lb-5Pf"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="tarjeta-jumbomas1"/>
+                                <connections>
+                                    <action selector="generateQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Kd-wb-cgf"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDq-9h-4Sx">
                                 <rect key="frame" x="0.0" y="64" width="600" height="44"/>
@@ -68,6 +71,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="9ZP-2G-sat"/>
                     <connections>
+                        <outlet property="tarjeta" destination="2pF-gb-Vgd" id="kur-Mt-G2U"/>
                         <segue destination="Fhf-H3-kQ0" kind="presentation" identifier="toLogin" id="QE3-aq-ifY"/>
                     </connections>
                 </viewController>

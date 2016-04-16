@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
 
     let defaults = NSUserDefaults.standardUserDefaults()
     
+    @IBOutlet weak var tarjeta: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,5 +31,24 @@ class HomeViewController: UIViewController {
     }
 
 
+    @IBAction func generateQRCode(sender: AnyObject) {
+        func generateQRCodeFromString(string: String) -> UIImage? {
+            let data = string.dataUsingEncoding(NSISOLatin1StringEncoding)
+            
+            if let filter = CIFilter(name: "CIQRCodeGenerator") {
+                filter.setValue(data, forKey: "inputMessage")
+                filter.setValue("H", forKey: "inputCorrectionLevel")
+                let transform = CGAffineTransformMakeScale(10, 10)
+                
+                if let output = filter.outputImage?.imageByApplyingTransform(transform) {
+                    return UIImage(CIImage: output)
+                }
+            }
+            
+            return nil
+        }
+        
+        let image = generateQRCodeFromString("Hacking with Swift is the best iOS coding tutorial I've ever read!")
+    }
 }
 
