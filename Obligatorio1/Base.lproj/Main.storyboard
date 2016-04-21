@@ -205,53 +205,107 @@
             </objects>
             <point key="canvasLocation" x="-1319" y="745"/>
         </scene>
-        <!--Cupones-->
-        <scene sceneID="skc-DO-MFU">
+        <!--Cupon View Controller-->
+        <scene sceneID="F1m-26-1kC">
             <objects>
-                <viewController title="Cupones" id="RDF-zN-eoD" sceneMemberID="viewController">
+                <viewController id="L0Y-TD-kjY" customClass="CuponViewController" customModule="Obligatorio1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sNs-po-Ouc"/>
-                        <viewControllerLayoutGuide type="bottom" id="OsV-cm-pV0"/>
+                        <viewControllerLayoutGuide type="top" id="47n-hu-60r"/>
+                        <viewControllerLayoutGuide type="bottom" id="jML-VW-kb0"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VLp-3Q-6Cs">
+                    <view key="view" contentMode="scaleToFill" id="DVj-lL-di7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxz-ik-Afs">
-                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="4d5-nB-Meq"/>
-                                    <constraint firstAttribute="height" constant="44" id="GnH-Vc-Sus"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Cupones" id="xOG-CV-qDo"/>
-                                </items>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="4d5-nB-Meq"/>
-                                    </mask>
-                                </variation>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vxz-ik-Afs" firstAttribute="centerX" secondItem="VLp-3Q-6Cs" secondAttribute="centerX" id="1Te-HS-7Wz"/>
-                            <constraint firstItem="vxz-ik-Afs" firstAttribute="top" secondItem="sNs-po-Ouc" secondAttribute="bottom" id="fVd-3F-vQX"/>
-                            <constraint firstItem="vxz-ik-Afs" firstAttribute="centerX" secondItem="VLp-3Q-6Cs" secondAttribute="centerX" id="jgu-bI-VEb"/>
-                            <constraint firstItem="vxz-ik-Afs" firstAttribute="leading" secondItem="VLp-3Q-6Cs" secondAttribute="leading" id="tjv-gH-CkM"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="jgu-bI-VEb"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cupones" id="sgx-pc-wpJ"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hoj-8B-Sb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fZ-R5-xrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="1439"/>
+            <point key="canvasLocation" x="963" y="1431"/>
+        </scene>
+        <!--Cupones-->
+        <scene sceneID="eCP-6d-q86">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTI-3N-z9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="D5S-pQ-EHz" customClass="CuponsViewController" customModule="Obligatorio1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qr6-Ms-wiu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="DTR-tP-yOd">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Cupones" id="6UL-Ax-qjr"/>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cuponsViewCellCustom" id="LLq-7b-38c" customClass="CuponsViewCellCustom" customModule="Obligatorio1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LLq-7b-38c" id="dAL-1m-2sz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-6R-fVw">
+                                            <rect key="frame" x="78" y="0.0" width="522" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AM-Ix-7se">
+                                            <rect key="frame" x="78" y="22" width="522" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AEZ-fm-2PC">
+                                            <rect key="frame" x="8" y="0.0" width="54" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="54" id="Szq-69-bJ9"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AEZ-fm-2PC" firstAttribute="top" secondItem="QKg-6R-fVw" secondAttribute="top" id="4QV-Wv-nxN"/>
+                                        <constraint firstItem="7AM-Ix-7se" firstAttribute="top" secondItem="QKg-6R-fVw" secondAttribute="bottom" constant="1" id="HGb-zW-ksJ"/>
+                                        <constraint firstItem="QKg-6R-fVw" firstAttribute="top" secondItem="dAL-1m-2sz" secondAttribute="top" id="Sa3-Nq-5es"/>
+                                        <constraint firstAttribute="trailing" secondItem="QKg-6R-fVw" secondAttribute="trailing" id="YtE-c5-EnX"/>
+                                        <constraint firstItem="QKg-6R-fVw" firstAttribute="leading" secondItem="AEZ-fm-2PC" secondAttribute="trailing" constant="16" id="afg-hE-y6e"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="AEZ-fm-2PC" secondAttribute="bottom" constant="-7" id="g99-YX-UOI"/>
+                                        <constraint firstItem="AEZ-fm-2PC" firstAttribute="leading" secondItem="dAL-1m-2sz" secondAttribute="leadingMargin" id="h5x-Sh-GwM"/>
+                                        <constraint firstAttribute="trailing" secondItem="7AM-Ix-7se" secondAttribute="trailing" id="q6I-H6-p4y"/>
+                                        <constraint firstItem="7AM-Ix-7se" firstAttribute="leading" secondItem="AEZ-fm-2PC" secondAttribute="trailing" constant="16" id="qYx-SD-iZW"/>
+                                        <constraint firstAttribute="bottom" secondItem="7AM-Ix-7se" secondAttribute="bottom" id="vao-Cx-kgX"/>
+                                        <constraint firstItem="7AM-Ix-7se" firstAttribute="top" secondItem="QKg-6R-fVw" secondAttribute="bottom" id="zyV-5L-dDc"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="HGb-zW-ksJ"/>
+                                            <exclude reference="zyV-5L-dDc"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cuponDiscount" destination="QKg-6R-fVw" id="KaI-xC-Oex"/>
+                                    <outlet property="cuponImage" destination="AEZ-fm-2PC" id="axB-E7-jGa"/>
+                                    <outlet property="cuponName" destination="7AM-Ix-7se" id="Uga-5s-d6P"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="D5S-pQ-EHz" id="3ZG-ve-rvf"/>
+                            <outlet property="delegate" destination="D5S-pQ-EHz" id="7Qa-rB-Qah"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Cupones" id="arC-u2-DIn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="L0Y-TD-kjY" kind="show" identifier="showCupon" id="dWd-e5-n8A"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="195" y="1431"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ch-PC-Bf6">
@@ -265,7 +319,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="e7J-QR-hI6"/>
-                        <segue destination="RDF-zN-eoD" kind="relationship" relationship="viewControllers" id="Ua8-D6-mbt"/>
+                        <segue destination="D5S-pQ-EHz" kind="relationship" relationship="viewControllers" id="qYa-uL-G7j"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC1-47-yJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
