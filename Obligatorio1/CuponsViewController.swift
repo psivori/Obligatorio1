@@ -14,8 +14,8 @@ class CuponsViewController: UITableViewController {
     var selectedCupon: Cupon?
     
     func loadSampleCupons() {
-        let cupon1 = Cupon(name: "Loreal", discount: 40, image:  "icn-facebook")
-        let cupon2 = Cupon(name: "Rexona", discount: 50, image: "icn-twitter")
+        let cupon1 = Cupon(name: "Shampoo Loreal", discount: 40, image:  "loreal")
+        let cupon2 = Cupon(name: "Desodorante Rexona", discount: 50, image: "rexona")
         cupons += [cupon1, cupon2]
     }
     
@@ -46,10 +46,9 @@ class CuponsViewController: UITableViewController {
         
         // Fetches the appropriate meal for the data source layout.
         let cupon = cupons[indexPath.row]
-        
-        cell.nameLabel.text = cupon.name
-        cell.photoImageView.image = UIImage(named : cupon.image)
-        
+        cell.cuponName.text = cupon.name
+        cell.cuponImage.image = UIImage(named : cupon.image)
+        cell.cuponDiscount.text = "Descuento " + String(cupon.discount) + ""
         return cell
     }
 

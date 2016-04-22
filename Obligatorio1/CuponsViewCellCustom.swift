@@ -10,15 +10,23 @@ import UIKit
 
 class CuponsViewCellCustom: UITableViewCell {
 
-    @IBOutlet weak var ratingControl: UIView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var photoImageView: UIImageView!
+   
+    @IBOutlet weak var cuponImage: UIImageView!
+    @IBOutlet weak var cuponName: UILabel!
+    @IBOutlet weak var cuponDiscount: UILabel!
   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
+    
+    
+    
 
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

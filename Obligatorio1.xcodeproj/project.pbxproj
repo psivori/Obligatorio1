@@ -15,10 +15,10 @@
 		8325596F1CC04B4C00C937D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8325596D1CC04B4C00C937D9 /* LaunchScreen.storyboard */; };
 		8325597A1CC04B4C00C937D9 /* Obligatorio1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832559791CC04B4C00C937D9 /* Obligatorio1Tests.swift */; };
 		832559851CC04B4C00C937D9 /* Obligatorio1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832559841CC04B4C00C937D9 /* Obligatorio1UITests.swift */; };
-		834A527D1CC85DC000C51B57 /* CuponsViewCellCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A527C1CC85DC000C51B57 /* CuponsViewCellCustom.swift */; settings = {ASSET_TAGS = (); }; };
-		834A527F1CC85E0A00C51B57 /* CuponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A527E1CC85E0A00C51B57 /* CuponsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		834A52811CC85E1600C51B57 /* Cupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A52801CC85E1600C51B57 /* Cupon.swift */; settings = {ASSET_TAGS = (); }; };
-		834A52831CC85E3100C51B57 /* CuponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A52821CC85E3100C51B57 /* CuponViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		83BC28CF1CCAEA3E00B85591 /* Cupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC28CC1CCAEA3E00B85591 /* Cupon.swift */; settings = {ASSET_TAGS = (); }; };
+		83BC28D01CCAEA3E00B85591 /* CuponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC28CD1CCAEA3E00B85591 /* CuponsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		83BC28D11CCAEA3E00B85591 /* CuponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC28CE1CCAEA3E00B85591 /* CuponViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		83BC28D31CCAEA4F00B85591 /* CuponsViewCellCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC28D21CCAEA4F00B85591 /* CuponsViewCellCustom.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		832559801CC04B4C00C937D9 /* Obligatorio1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Obligatorio1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		832559841CC04B4C00C937D9 /* Obligatorio1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obligatorio1UITests.swift; sourceTree = "<group>"; };
 		832559861CC04B4C00C937D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		834A527C1CC85DC000C51B57 /* CuponsViewCellCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuponsViewCellCustom.swift; path = "../../../../Volumes/ Archivos SP16/ios/Patricia/tableView/CuponsViewCellCustom.swift"; sourceTree = "<group>"; };
-		834A527E1CC85E0A00C51B57 /* CuponsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuponsViewController.swift; path = "../../../../Volumes/ Archivos SP16/ios/Patricia/tableView/tableView/CuponsViewController.swift"; sourceTree = "<group>"; };
-		834A52801CC85E1600C51B57 /* Cupon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cupon.swift; path = "../../../../Volumes/ Archivos SP16/ios/Patricia/tableView/tableView/Cupon.swift"; sourceTree = "<group>"; };
-		834A52821CC85E3100C51B57 /* CuponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuponViewController.swift; path = "../../../../Volumes/ Archivos SP16/ios/Patricia/tableView/tableView/CuponViewController.swift"; sourceTree = "<group>"; };
+		83BC28CC1CCAEA3E00B85591 /* Cupon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cupon.swift; sourceTree = "<group>"; };
+		83BC28CD1CCAEA3E00B85591 /* CuponsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuponsViewController.swift; sourceTree = "<group>"; };
+		83BC28CE1CCAEA3E00B85591 /* CuponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuponViewController.swift; sourceTree = "<group>"; };
+		83BC28D21CCAEA4F00B85591 /* CuponsViewCellCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuponsViewCellCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +107,10 @@
 		832559631CC04B4C00C937D9 /* Obligatorio1 */ = {
 			isa = PBXGroup;
 			children = (
-				834A527E1CC85E0A00C51B57 /* CuponsViewController.swift */,
-				834A52801CC85E1600C51B57 /* Cupon.swift */,
-				834A52821CC85E3100C51B57 /* CuponViewController.swift */,
-				834A527C1CC85DC000C51B57 /* CuponsViewCellCustom.swift */,
+				83BC28CC1CCAEA3E00B85591 /* Cupon.swift */,
+				83BC28CD1CCAEA3E00B85591 /* CuponsViewController.swift */,
+				83BC28D21CCAEA4F00B85591 /* CuponsViewCellCustom.swift */,
+				83BC28CE1CCAEA3E00B85591 /* CuponViewController.swift */,
 				832559641CC04B4C00C937D9 /* AppDelegate.swift */,
 				832559661CC04B4C00C937D9 /* HomeViewController.swift */,
 				832559681CC04B4C00C937D9 /* Main.storyboard */,
@@ -270,13 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BC28D11CCAEA3E00B85591 /* CuponViewController.swift in Sources */,
+				83BC28D31CCAEA4F00B85591 /* CuponsViewCellCustom.swift in Sources */,
 				830940531CC1AF8A0094095D /* LoginViewController.swift in Sources */,
 				832559671CC04B4C00C937D9 /* HomeViewController.swift in Sources */,
-				834A527D1CC85DC000C51B57 /* CuponsViewCellCustom.swift in Sources */,
-				834A52811CC85E1600C51B57 /* Cupon.swift in Sources */,
-				834A52831CC85E3100C51B57 /* CuponViewController.swift in Sources */,
-				834A527F1CC85E0A00C51B57 /* CuponsViewController.swift in Sources */,
+				83BC28D01CCAEA3E00B85591 /* CuponsViewController.swift in Sources */,
 				832559651CC04B4C00C937D9 /* AppDelegate.swift in Sources */,
+				83BC28CF1CCAEA3E00B85591 /* Cupon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

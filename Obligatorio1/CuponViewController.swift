@@ -9,12 +9,10 @@
 import UIKit
 
 class CuponViewController: UIViewController {
-
-    //@IBOutlet weak var appName: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           // appName.text =
         
     }
 
