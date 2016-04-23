@@ -175,11 +175,11 @@
             </objects>
             <point key="canvasLocation" x="320" y="2051"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Cupones-->
         <scene sceneID="DTG-VM-c5w">
             <objects>
                 <navigationController id="HOc-OG-QIQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="hlY-iM-d2j"/>
+                    <tabBarItem key="tabBarItem" title="Cupones" image="cupons" id="hlY-iM-d2j"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HvT-Dm-b1L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -383,11 +383,11 @@
             </objects>
             <point key="canvasLocation" x="-1507" y="1287"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Inicio-->
         <scene sceneID="fY1-63-82F">
             <objects>
                 <navigationController id="tNe-q3-eUr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="0XL-fn-87j"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="home" id="0XL-fn-87j"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rwV-hJ-RIa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -402,6 +402,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cupons" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
         <image name="tarjeta-jumbomas1" width="285" height="177"/>
     </resources>
 </document>
