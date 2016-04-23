@@ -38,7 +38,12 @@ class HomeViewController: UIViewController {
                 filter.setValue("H", forKey: "inputCorrectionLevel")
                 let transform = CGAffineTransformMakeScale(10, 10)
                 if let output = filter.outputImage?.imageByApplyingTransform(transform) {
-                    UIImage(CIImage: output)
+                    let alert = UIAlertController(title: nil, message: "", preferredStyle: UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil))
+                    var imageView = UIImageView(frame: CGRectMake(220, 10, 40, 40))
+                    imageView.image = UIImage(CIImage: output)
+                    alert.view.addSubview(imageView)
+                    self.presentViewController(alert, animated: true, completion: nil)
                 }
             }
     }

@@ -48,7 +48,7 @@ class CuponsViewController: UITableViewController {
         let cupon = cupons[indexPath.row]
         cell.cuponName.text = cupon.name
         cell.cuponImage.image = UIImage(named : cupon.image)
-        cell.cuponDiscount.text = "Descuento " + String(cupon.discount) + ""
+        cell.cuponDiscount.text = "Descuento " + String(cupon.discount) + "%"
         return cell
     }
 
@@ -59,7 +59,7 @@ class CuponsViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let cuponViewController = segue.destinationViewController as? CuponViewController{
-            
+            cuponViewController.cupon = selectedCupon
         }
     }
 
