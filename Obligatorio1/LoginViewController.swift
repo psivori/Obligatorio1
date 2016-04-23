@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
             defaults.setObject(password, forKey: "Password")
             self.dismissViewControllerAnimated(true, completion: nil)
         }else{
-            let alert = UIAlertController(title: nil, message: "Wrong email and password", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: nil, message: "Credenciales incorrectas", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }

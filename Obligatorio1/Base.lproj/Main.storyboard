@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HOc-OG-QIQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PUT-d9-3KQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -31,7 +31,6 @@
                                 <state key="normal" title="Button" image="tarjeta-jumbomas1"/>
                                 <connections>
                                     <action selector="generateQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Kd-wb-cgf"/>
-                                    <action selector="generateQRCodes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUR-3Q-yT3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,8 +42,7 @@
                             <constraint firstItem="2pF-gb-Vgd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mF0-zw-ebA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inicio" id="mTk-zP-DSW"/>
-                    <navigationItem key="navigationItem" id="9ZP-2G-sat"/>
+                    <navigationItem key="navigationItem" title="Inicio" id="9ZP-2G-sat"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tarjeta" destination="2pF-gb-Vgd" id="kur-Mt-G2U"/>
@@ -53,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-552" y="1421"/>
+            <point key="canvasLocation" x="-500" y="2042"/>
         </scene>
         <!--Login-->
         <scene sceneID="F8X-tZ-OTQ">
@@ -175,23 +173,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNy-5f-AiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-552" y="745"/>
+            <point key="canvasLocation" x="320" y="2051"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DTG-VM-c5w">
             <objects>
                 <navigationController id="HOc-OG-QIQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="hlY-iM-d2j"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HvT-Dm-b1L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="PUT-d9-3KQ" kind="relationship" relationship="rootViewController" id="3yQ-uo-spb"/>
+                        <segue destination="D5S-pQ-EHz" kind="relationship" relationship="rootViewController" id="lrJ-h0-7Ez"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmA-7s-2Jf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1319" y="745"/>
+            <point key="canvasLocation" x="-779" y="1287"/>
         </scene>
         <!--Cupones-->
         <scene sceneID="F1m-26-1kC">
@@ -272,11 +271,12 @@
                         <outlet property="cuponDetailDiscount" destination="FAF-je-n6E" id="e6k-1z-hy7"/>
                         <outlet property="cuponDetailImage" destination="x9M-1a-oDJ" id="xvQ-qb-Pot"/>
                         <outlet property="cuponDetailName" destination="cMS-jc-nuF" id="Ehx-ZI-Zo2"/>
+                        <outlet property="cuponDetailQrCode" destination="5mV-ma-1JY" id="h5J-KZ-5Dp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fZ-R5-xrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="963" y="1431"/>
+            <point key="canvasLocation" x="799" y="1311"/>
         </scene>
         <!--Cupones-->
         <scene sceneID="eCP-6d-q86">
@@ -354,7 +354,7 @@
                             <outlet property="delegate" destination="D5S-pQ-EHz" id="7Qa-rB-Qah"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Cupones" id="arC-u2-DIn"/>
+                    <navigationItem key="navigationItem" title="Cupones" id="Fhv-dL-jsD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="L0Y-TD-kjY" kind="show" identifier="showCupon" id="dWd-e5-n8A"/>
@@ -362,7 +362,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTI-3N-z9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="1431"/>
+            <point key="canvasLocation" x="-29" y="1311"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ch-PC-Bf6">
@@ -375,13 +375,30 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="e7J-QR-hI6"/>
-                        <segue destination="D5S-pQ-EHz" kind="relationship" relationship="viewControllers" id="qYa-uL-G7j"/>
+                        <segue destination="tNe-q3-eUr" kind="relationship" relationship="viewControllers" id="iFt-VW-HRd"/>
+                        <segue destination="HOc-OG-QIQ" kind="relationship" relationship="viewControllers" id="Wg6-qy-gyN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC1-47-yJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1319" y="1527"/>
+            <point key="canvasLocation" x="-1507" y="1287"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fY1-63-82F">
+            <objects>
+                <navigationController id="tNe-q3-eUr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="0XL-fn-87j"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rwV-hJ-RIa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4NL-7J-fFg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lr5-QJ-lEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1235" y="2042"/>
         </scene>
     </scenes>
     <resources>

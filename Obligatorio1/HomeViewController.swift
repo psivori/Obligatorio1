@@ -38,9 +38,9 @@ class HomeViewController: UIViewController {
                 filter.setValue("H", forKey: "inputCorrectionLevel")
                 let transform = CGAffineTransformMakeScale(10, 10)
                 if let output = filter.outputImage?.imageByApplyingTransform(transform) {
-                    let alert = UIAlertController(title: nil, message: "", preferredStyle: UIAlertControllerStyle.Alert)
+                    let alert = UIAlertController(title: nil, message: "\n\n\n\n\n\n\n\n", preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil))
-                    var imageView = UIImageView(frame: CGRectMake(220, 10, 40, 40))
+                    var imageView = UIImageView(frame: CGRectMake(35, 10, 200, 200))
                     imageView.image = UIImage(CIImage: output)
                     alert.view.addSubview(imageView)
                     self.presentViewController(alert, animated: true, completion: nil)
